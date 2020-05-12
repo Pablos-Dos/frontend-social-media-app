@@ -10,5 +10,5 @@ WORKDIR /django
 RUN apt-get update
 RUN apt-get install -y build-essential git
 # RUN pip install pip==9.0.1
-RUN pip install pip==20.0.2
+RUN pip install pip==20.1
 RUN pip install -r py-requirements/base.txt
