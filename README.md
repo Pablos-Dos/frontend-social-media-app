@@ -1,32 +1,13 @@
 # projekt-social-media-app
 
-""Kochplatte" für Beuth-Projekt Social-Media-App auf Basis von Microservices"
+Frontend
 
-## Repo klonen
+## Pakete installieren & Webpack-Server starten
 
-* `$ git clone ` (im Shell an gewünschter Stelle)
-
-## Installation
-
-Über Docker nach folgender Anleitung:
-
-* `$ cd /path/to/repo`
-* PostgreSQL installieren und Datenbank erzeugen (DB muss neu erzeugt werden)
-* In `.env.temp`. die korrekten DB-Zugriffsdaten eingeben
-* `$ cp .env.temp .env`
-
-* Install [Docker](https://www.docker.com/products/overview) and [Docker Compose](https://docs.docker.com/compose/install/).
-* `$ docker-compose build`
-* `$ docker-compose up`
-
-Development Server wieder stoppen:
-
-* `$ docker-compose stop`
-
-Stop Docker development server and remove containers, networks, volumes, and images created by up.
-
-* `$ docker-compose down`
+* `$ in frontend-projekt-social-media-app-Verzeichnis navigieren `
+* `$ yarn ` (im Shell an gewünschter Stelle)
+* `$ npm run dev `
 
 ## Zugriff auf Website
 
-http://localhost:8000
+http://localhost:1234/
