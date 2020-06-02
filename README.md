@@ -5,7 +5,7 @@ Frontend
 ## Pakete installieren & Webpack-Server starten
 
 * `$ in frontend-projekt-social-media-app-Verzeichnis navigieren `
-* `$ yarn ` (im Shell an gewünschter Stelle)
+* `$ yarn `
 * `$ npm run dev `
 
 ## Zugriff auf Website
