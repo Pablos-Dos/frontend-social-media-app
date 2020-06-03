@@ -1,0 +1,25 @@
+.btn {
+  border: none !important;
+}
+
+.btn-primary {
+  background-color: $color-dark-cyan !important;
+}
+
+.form-control {
+  border: none !important;
+}
+
+.row {
+  .flex-row {
+    display: flex !important;
+  }
+
+  .align-bottom {
+    align-items: flex-end;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+}
