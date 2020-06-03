@@ -1,9 +1,12 @@
+//import Form from "./js/components/Form";
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import createHistory from 'history/createBrowserHistory';
 
+
 import { authLoginUserSuccess } from './actions/auth';
-import Root from './containers/Root/Root';
+import { Root } from './containers/Root/Root';
 import configureStore from './store/configureStore';
 
 

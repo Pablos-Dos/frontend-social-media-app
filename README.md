@@ -2,16 +2,23 @@
 
 Frontend
 
-## Pakete installieren & Webpack-Server starten
+## Production
 
-* `$ in frontend-projekt-social-media-app-Verzeichnis navigieren `
-* `$ yarn `
-* `$ npm run dev `
+`$ npm run build`
+Über `dist/index.html` lässt sich App im Browser aufrufen
 
-## Zugriff auf Website
+## Development
+
+`$ npm run dev `
+
+## Zugriff auf Website (Development Server)
 
 http://localhost:1234/
 
 ## Webpack Video
 
 https://www.youtube.com/watch?v=2vzh19H1GHk
+
+## Webpack, Babel, React from scratch
+
+https://www.valentinog.com/blog/babel/

@@ -1,21 +1,52 @@
 const path = require('path')
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    mode: 'development',
-    entry: {
-      myfile: './src/engine.js'
-    },
-    output: {
-      path: path.resolve(__dirname, 'build'),
-      filename: 'js/main.js',
-      publicPath: '/assets/'
-    },
-    devServer: {
-      port: 1234,
-      contentBase: path.join(__dirname, 'dist')
-    },
+    // mode: 'development',
+    // entry: {
+    //   myfile: './src/engine.js'
+    // },
+    // output: {
+    //   path: path.resolve(__dirname, 'build'),
+    //   filename: 'js/main.js',
+    //   publicPath: '/assets/'
+    // },
+    // devServer: {
+    //   port: 1234,
+    //   contentBase: path.join(__dirname, 'dist')
+    // },
     module: {
         rules: [
+
+          {
+            test: /\.(png|jpg|gif)$/i,
+            use: [
+              {
+                loader: 'url-loader',
+                options: {
+                  limit: 8192,
+                },
+              },
+            ],
+          },
+
+          {
+                  test: /\.(js|jsx)$/,
+                  exclude: /node_modules/,
+                  use: {
+                    loader: "babel-loader"
+                  }
+                },
+
+                {
+                        test: /\.html$/,
+                        use: [
+                          {
+                            loader: "html-loader"
+                          }
+                        ]
+                      },
+
             {
                 test: /\.(scss)$/,
                 use: [
@@ -45,5 +76,12 @@ module.exports = {
                 ]
             }
         ]
-    }
+    },
+
+    plugins: [
+  new HtmlWebPackPlugin({
+    template: "./src/index.html",
+    filename: "./index.html"
+  })
+]
 }

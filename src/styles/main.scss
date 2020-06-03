@@ -1,15 +1,1 @@
-@import "config/reset";
-@import "config/typography";
-
-@import "theme/base";
-@import "theme/login";
-@import "theme/navbar";
-@import "theme/footer";
-
-@import "utils/margins";
-@import "utils/bootstrap-overrides";
-
-$font-path: '~react-widgets/lib/fonts';
-$img-path: '~react-widgets/lib/img';
-
-@import '~react-widgets/lib/scss/react-widgets';
+@import "~bootstrap/scss/bootstrap";
