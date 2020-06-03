@@ -4,11 +4,13 @@ Frontend
 
 ## Production
 
+`$ yarn`
 `$ npm run build`
 Über `dist/index.html` lässt sich App im Browser aufrufen
 
 ## Development
 
+`$ yarn`
 `$ npm run dev `
 
 ## Zugriff auf Website (Development Server)
