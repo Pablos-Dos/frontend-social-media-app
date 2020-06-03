@@ -1,6 +1,5 @@
 {
   "name": "ReactDjangoBoilerplate",
-
   "version": "1.0.0",
   "description": "React + Django Boilerplate",
   "author": "Pablos",
@@ -9,14 +8,23 @@
     "dev": "webpack-dev-server"
   },
   "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "redux": "4.0.5"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "css-loader": "^3.5.3",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
     "redux-devtools-dock-monitor": "1.1.3",
     "redux-devtools-log-monitor": "1.4.0",
     "redux-logger": "3.0.6",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
