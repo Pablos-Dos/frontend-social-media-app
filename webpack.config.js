@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+    devtool: "source-map",
     // mode: 'development',
     // entry: {
     //   myfile: './src/engine.js'

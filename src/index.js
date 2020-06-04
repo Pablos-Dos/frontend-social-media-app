@@ -2,11 +2,11 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import createHistory from 'history/createBrowserHistory';
-
+//import createHistory from 'history/createBrowserHistory';
+import {createBrowserHistory as createHistory} from 'history';
 
 import { authLoginUserSuccess } from './actions/auth';
-import { Root } from './containers/Root/Root';
+import Root from './containers/Root/Root';
 import configureStore from './store/configureStore';
 
 
